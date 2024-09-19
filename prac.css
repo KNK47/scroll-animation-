@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    align-content: center;
+    place-items: center;
+    display: grid;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
